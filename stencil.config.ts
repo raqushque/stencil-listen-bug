@@ -4,16 +4,10 @@ export const config: Config = {
   namespace: 'listener-repro',
   outputTargets: [
     {
-      type: 'dist',
-      esmLoaderPath: '../loader',
-    },
-    {
       type: 'dist-custom-elements',
       customElementsExportBehavior: 'auto-define-custom-elements',
       externalRuntime: false,
-    },
-    {
-      type: 'docs-readme',
+      dir: 'demo/build'
     },
     {
       type: 'www',
